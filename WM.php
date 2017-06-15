@@ -19,16 +19,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+    $arr = array();
     while($row = $result->fetch_assoc()) {
-        $arr = array('Id:' => $row["ID"], 'Name' => $row["NAME"] );
-        echo json_encode($arr);
+        array_push($arr, array('id:' => $row["ID"] , 'name' => $row["NAME"]) );
     }
+    echo json_encode($arr);
 } else {
     echo "0 results";
 }
-
-
-
 
 $conn->close();
 ?>
