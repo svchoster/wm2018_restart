@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>WM Planner 2018</title>
-    <link rel="stylesheet" href="jquery-ui.min.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="externalScripts/jquery-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="externalScripts/jquery-1.12.4.js"></script>
+    <script src="externalScripts/jquery-ui.js"></script>
+    <script src="loadLaenderForSettings.js"></script>
     <script>
         $( function() {
             $( "#tabs" ).tabs();
         } );
     </script>
 </head>
-<body>
+<body onload="showlaender()">
 
 <div id="tabs">
     <ul>
@@ -21,7 +22,7 @@
         <li><a href="#tabs-2">Gruppenphase</a></li>
     </ul>
     <div id="tabs-1">
-    <p id="testLaender">asdfg</p>
+    <p id="testLaender"></p>
     </div>
     <div id="tabs-2">
         <p>Gruppenphase hier</p>
