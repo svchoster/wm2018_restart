@@ -2,6 +2,7 @@
 body{
     background-image: url("FIFAwmRussland.jpg");
     background-size: 100%;
+    background-attachment: fixed;
 }
 
 .tabreiter

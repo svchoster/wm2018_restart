@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
 
     <script src="externalScripts/jquery-1.12.4.js"></script>
     <script src="externalScripts/jquery-ui.js"></script>
     <link rel="stylesheet" href="externalScripts/bootstrap.min.css">
 
+    <script src="loadLaenderForSettings.js"></script>
 
     <title>WM 2018</title>
 
 </head>
 
-<body>
+<body onload=showlaender()>
 <h1>WM 2018</h1>
 <div class="tabreiter">
     <ul>
@@ -22,7 +22,8 @@
             <input type="radio" name="tabreiter-0" checked="checked" id="tabreiter-0-0" /><label for="tabreiter-0-0">Eigenschaft</label>
             <div>
                 <h3>Eigenschaft</h3>
-                <p>Hier kommen die Eigenschaften rein
+                <p>Gruppen für die Meisterschaft</p>
+                <div class="container" id="tabellen"></div>
             </div>
         </li><li>
         <input type="radio" name="tabreiter-0" id="tabreiter-0-1" /><label for="tabreiter-0-1">Gruppenphase</label>
