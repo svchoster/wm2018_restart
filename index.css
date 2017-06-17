@@ -1,8 +1,10 @@
+table.container{
+
+}
 
 body{
     background-image: url("FIFAwmRussland.jpg");
     background-size: 100%;
-    background-attachment: fixed;
 }
 
 .tabreiter
@@ -96,7 +98,7 @@ body{
     background: #fff;
     border-bottom-color: #fff;
     cursor: default;
-    background-color: gold;
+    background-color: #007fff;
 }
 /*Versteckt das "Häkchen" beim auswählen des Tabs*/
 .tabreiter input[type="radio"]
