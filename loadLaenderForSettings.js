@@ -3,11 +3,12 @@
  */
 
 function showlaender() {
+    var a_gruppenGlobal;
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
 
-        var a_gruppen = new Array();
+        var a_gruppen = new Array(); // test
 
         if (this.readyState == 4 && this.status == 200) {
             myObj = JSON.parse(this.response); //Code parsen
@@ -24,6 +25,7 @@ function showlaender() {
                     laenderNr++;
                 }
             }
+            a_gruppenGlobal = a_gruppen;
 
             //Ausgeben in Tabelle
             var s2 = "";
